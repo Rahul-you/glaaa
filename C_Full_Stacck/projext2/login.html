@@ -26,6 +26,22 @@
         <input type="password" name="password" id="password" required >
         <input type="hidden" name="hiddenvalue" id="password" value="123456789">
         <br><br>
+
+        <label for="state"> State</label>
+        <br>
+
+        <select name="state"  id="state" required multiple >
+            <option value="" disabled selected>Select Your State</option>
+            <option value="kerala" >Kerala</option>
+            <option value="rajashthan">Rajhsthan</option>
+            <option value="up">Uttar Pradesh</option>
+        </select>
+        <br><br>
+
+        <label for="file-upload"> File Upload</label>
+        <input type="file" name="file-upload" id="file-upload" accept=".pdf">
+        <br><br>
+        
         <button type="submit">Submit</button>
     </form>
 </body>
