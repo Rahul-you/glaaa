@@ -10,11 +10,42 @@
     
 </head>
 <body>
+    <style>
+        h1{
+            color: aqua;
+        }
+        p{
+            background-color: yellow;
+        }
+        img{
+            margin-left: 50px;
+        
+        }
+        .test,
+        .test1{
+            color: brown;
+            margin-left: 20px;
+        }
+        #table{
+            color: blue;
+            font-size: 30px;
+        }
+        #link{
+            font-size: 30px;
+            color: blue;
+        }
+        a[target]{
+            color: aquamarine;
+        }
+        a[target="_blank"]{
+            color: black;
+        }
+       
+    </style>
     <!-- <a href="info.html#simpletag" id="simpletag" target="_blank">content</a> -->
     <p>
 
         <h1>Rahul</h1>
-        <h2>this is heading 2</h2>
         <img src="C:\Users\Rahul\OneDrive\Desktop\C_Full_Stacck\project1\rahul.jpg" alt="image is not loaded" width="150px">
 
         <h4>Tower wali gali building No.23</h4>
@@ -24,7 +55,7 @@
         <p>I am currently pursuing in btech <Strong> 3 <sup>rd</sup>Year </Strong></p>
 
         <hr>
-        <h2>Skills</h2>
+        <h2 class="test1">Skills</h2>
         <ol type="A">
             <li>Java</li>
             <li>Python</li>
@@ -33,7 +64,7 @@
             <li>React</li>
         </ol>
 
-        <h2>Hobbies</h2>
+        <h2 class="test">Hobbies</h2>
 
         <ul type="circle">
             <li>Reading</li>
@@ -42,7 +73,7 @@
         
         </ul>
 
-        <div>
+        <div id="table">
             <table border="1px">
                 <tr>
                 <th>S.R.</th>
@@ -100,17 +131,16 @@
 
     </p>
     
-    <ol type="1">
-       <li> <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Email</a></li>
-       <li> <a href="https://www.google.com/" target="_blank">Google</a></li>
+    <ol type="1" id="link">
+       <li> <a href="https://mail.google.com/mail/u/0/#inbox" target="">Email</a></li>
+       <li> <a href="https://www.google.com/" target="">Google</a></li>
     </ol>
     
     
-    <a href="mailto:rkx639849@gmail.com">My email</a>
+    <a href="mailto:rkx639849@gmail.com" target="_blank">My email</a>
 
 
 
     
 </body>
->>>>>>> Stashed changes
 </html>
