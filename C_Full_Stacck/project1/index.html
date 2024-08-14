@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a{
+            margin-right: 50px;
+        }
+
+        img
+        {
+            margin-right: 50px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1"></div>
+
+    <div id="div2">
+        <img src="" alt="">
+    </div>
+
+
+    <script>
+
+        const link=[
+            {
+                URL:'https://www.google.com/',
+                Text:"Google"
+            },
+
+            {
+                URL:'https://www.google.com/',
+                Text:"Chrome"
+            },
+            {
+                URL:'https://www.google.com/',
+                Text:"Whatsapp"
+            },
+            
+            {
+                URL:'https://www.google.com/',
+                Text:"youtube"
+            },
+        ]
+
+        link.forEach(item=>{
+            const aTag=document.createElement('a')
+
+        aTag.setAttribute('href',item.URL)
+        aTag.textContent=item.Text
+        document.body.appendChild(aTag)
+
+        })
+
+
+        const image=[
+            {
+                URL:'https://th.bing.com/th/id/OIP.nYx_U0tdEW7sQgUIaJbMhQAAAA?rs=1&pid=ImgDetMain'
+            }
+            ,
+
+            {
+                URL:'https://th.bing.com/th/id/OIP.nYx_U0tdEW7sQgUIaJbMhQAAAA?rs=1&pid=ImgDetMain'
+            },
+            {
+                URL:'https://th.bing.com/th/id/OIP.nYx_U0tdEW7sQgUIaJbMhQAAAA?rs=1&pid=ImgDetMain'
+            }
+        ]
+
+
+        image.forEach(item=>{
+
+            const imgtag=document.createElement('img')
+        imgtag.setAttribute('src',item.URL)
+        imgtag.setAttribute('height','100px')
+        imgtag.setAttribute('src',item.URL)
+        document.body.appendChild(imgtag)
+
+        })
+
+
+        // const divElement=document.getElementById('div2')
+        // const imgtag=document.createElement('img')
+        // imgtag.setAttribute('src','https://th.bing.com/th/id/OIP.nYx_U0tdEW7sQgUIaJbMhQAAAA?rs=1&pid=ImgDetMain')
+        // divElement.appendChild(imgtag)
+
+
+
+
+        // const divElement=document.getElementById('div1')
+        // const divElement=document.querySelector('div')
+        // const aTag=document.createElement('a')
+
+        // aTag.setAttribute('href','https://www.google.com/')
+        // aTag.textContent="using js"
+        // divElement.appendChild(aTag)
+
+
+    </script>
+    
+</body>
+</html>
